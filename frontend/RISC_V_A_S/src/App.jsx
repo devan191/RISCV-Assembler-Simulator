@@ -5,6 +5,8 @@ import MemoryTable from "./components/MemoryTable";
 import Stepper from "./components/Stepper";
 import About from "./components/About";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+
 function parseSteps(simOutput) {
   // Split output into steps by Program Counter
   const stepBlocks = simOutput.split(/Program Counter:- /g).slice(1);
@@ -91,7 +93,7 @@ function App() {
     setStepIdx(0);
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/assemble", {
+      const res = await fetch(`${API_URL}/assemble`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code }),
@@ -111,7 +113,7 @@ function App() {
     setStepIdx(0);
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/simulate", {
+      const res = await fetch(`${API_URL}/simulate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ machine_code: machineCode }),
