@@ -419,7 +419,7 @@ Note: Assembly code must end with 'beq zero, zero, 0' (virtual halt).`}
         &copy; {new Date().getFullYear()} RISC-V Assembler & Simulator. Crafted
         with ❤️ by Devan.
         <a
-          href="https://github.com"
+          href="https://github.com/devan191/RISCV-Assembler-Simulator"
           target="_blank"
           rel="noopener noreferrer"
           className={`ml-2 ${

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a custom-built RISC-V assembler and simulator, designed to translate RISC-V assembly code into machine code and simulate its execution. It provides a hands-on, educational tool for understanding the RISC-V instruction set architecture (ISA).
+This project is a custom-built RISC-V assembler and simulator, designed to translate RISC-V assembly code into machine code and simulate its execution. It provides a hands-on, educational tool for understanding the RISC-V instruction set architecture (ISA). Running live at https://riscv-assembler-simulator.vercel.app/
 
 ## Features
 
