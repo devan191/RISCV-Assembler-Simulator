@@ -230,10 +230,15 @@ function App() {
                 } rounded-lg focus:outline-none focus:ring-2 resize-y transition-colors duration-300 shadow-inner`}
                 placeholder={`Enter your RISC-V assembly code here...
 Example:
-  addi x1, x0, 5
-  add x2, x1, x1
+  addi a0,a1,10
+  sub a3,a4,a5
+  addi t0,t1,10
+  beq a0,t0,label
+  jal ra,label
+  label:  beq zero,zero,0
 
-Note: Assembly code must end with 'beq zero, zero, 0' (virtual halt).`}
+Note: Assembly code must end with 'beq zero, zero, 0' (virtual halt).
+For more info on syntax, checkout SyntaxRef pdf on github repo.`}
               />
               <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <button

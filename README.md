@@ -119,4 +119,4 @@ Register values:: [ {zero:0} {ra:0} ... {a0:10} ... ]
 
 ---
 
-For more details, see the code and comments in each module and do check ProbPDF.pdf in backend folder, which contains all the assumptions, encodings and syntax on which this project is built upon. Contributions and suggestions are welcome!
+For more details, see the code and comments in each module and do check SyntaxRef PDF, which contains all the assumptions, encodings and syntax on which this project is built upon. Contributions and suggestions are welcome!
